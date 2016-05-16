@@ -1,0 +1,8 @@
+/build/
+/bin/
+/edict2u
+/.gradle/
+/.settings/
+/.classpath
+/.project
+/edict2u.sqlite
