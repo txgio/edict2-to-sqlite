@@ -1,3 +1,4 @@
+apply plugin: 'eclipse'
 apply plugin: 'java'
 apply plugin: 'application'
 
@@ -12,3 +13,9 @@ dependencies {
 }
 
 mainClassName = "io.txg.Edict2ToSqlite"
+
+eclipseJdt << {
+	File f = file('.settings/org.eclipse.core.resources.prefs')
+	f.write('eclipse.preferences.version=1\n')
+	f.append('encoding/<project>=UTF-8')
+}
